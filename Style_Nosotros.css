@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root {
+    --color-primario: #00BFFF;
+    --color-secundario: #17A2B8;
+    --color-texto: #333;
+    --color-fondo: #FFFFFF;
+    --color-fondo-claro: #f8f9fa;
+    --borde-radio: 10px;
+    --sombra-caja: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--borde-radio);
+}
+
+section {
+    padding: 3rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: var(--color-primario);
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+h3 {
+    color: var(--color-primario);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h5 {
+    color: var(--color-primario);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: var(--color-secundario);
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about-intro {
+    text-align: center;
+}
+
+#logo-principal {
+    display: block;
+    margin: 1rem auto 1.5rem auto;
+    max-width: 250px;
+    width: 100%; 
+    height: auto;
+    border: none;
+    border-radius: var(--borde-radio);
+    box-shadow: var(--sombra-caja);
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    font-weight: 300;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    background-color: var(--color-fondo-claro);
+    border-radius: var(--borde-radio);
+    padding: 2rem;
+}
+
+.stat-item {
+    border: 2px solid var(--color-secundario);
+    padding: 1.5rem;
+    border-radius: var(--borde-radio);
+    flex-basis: 250px;
+    background-color: var(--color-fondo);
+}
+
+.stat-item strong {
+    display: block;
+    font-size: 2rem;
+    color: var(--color-primario);
+}
+
+.stat-item span {
+    font-size: 1rem;
+    color: var(--color-texto);
+}
+
+.mision-vision-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.info-box {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: var(--borde-radio);
+    padding: 1.5rem;
+    box-shadow: var(--sombra-caja);
+    text-align: center;
+}
+
+.info-box img {
+    margin-top: 1rem;
+}
+
+.info-box p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.club-planes-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.plan-card {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: var(--borde-radio);
+    box-shadow: var(--sombra-caja);
+    overflow: hidden;
+    max-width: 400px;
+}
+
+.plan-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: var(--borde-radio) var(--borde-radio) 0 0;
+}
+
+.plan-card h3 {
+    margin-top: 1rem;
+}
+
+.plan-card ul {
+    list-style: none;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.plan-card li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.staff-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.staff-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: var(--borde-radio);
+    padding: 1rem;
+    box-shadow: var(--sombra-caja);
+}
+
+.staff-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid var(--color-secundario);
+}
+
+.staff-name {
+    font-weight: 700;
+    color: var(--color-primario);
+    font-size: 1.1rem;
+}
+
+#convenios h4 {
+    font-size: 1.5rem;
+    color: var(--color-primario);
+    margin-bottom: 0.2rem;
+    text-align: left;
+}
+
+.convenios-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1.5rem;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.convenio-card {
+    border: 1px solid #ddd;
+    border-radius: var(--borde-radio);
+    padding: 1.5rem;
+    box-shadow: var(--sombra-caja);
+    background-color: #fff;
+}
+
+.convenio-card p {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.convenio-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.convenio-card li {
+    margin-bottom: 0.5rem;
+}
+
+.convenio-card li strong {
+    color: var(--color-secundario);
+}
+
+.convenio-card.especial {
+    background-color: var(--color-fondo-claro);
+    text-align: center;
+}
+
+.convenio-card.especial p {
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    h3 {
+        font-size: 1.4rem;
+    }
+    
+
+    .stats-container,
+    .mision-vision-container,
+    .club-planes-container {
+        flex-direction: column;
+    }
+
+    .staff-container {
+        grid-template-columns: 1fr;
+    }
+
+    .convenios-container {
+        grid-template-columns: 1fr;
+    }
+}
