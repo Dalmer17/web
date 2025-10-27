@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+html {
+scroll-behavior: smooth;
+}
+
+body{
+font-family: 'Segoe UI';
+line-height: 1.6;
+color: #4b4a4a;
+}
+
+
+h2 {
+    padding: 15px 15px;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px solid rgb(17, 176, 239);
+    padding: 10px;
+    background-color: rgb(159, 215, 238);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+p {
+    text-align: center;
+}
+.contacto-1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+label {
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;    
+}
+input, textarea {
+    padding: 17px 50px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(227, 240, 246);
+    border: 2px;
+    outline: none;
+}
+.btn {
+    font-size: 20px;
+    color: black; 
+    border: 10px;
+    border-radius: 25px;
+    background-color: rgb(3, 144, 199);
+    cursor: pointer;
+}
+h3 {
+    display: block;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.reserva {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto); 
+    gap: 15px;
+    justify-content: center;
+    align-content: center;
+}
+
+.reserva__uno.uno--mensaje {
+    display: grid;
+    place-items: center; 
+    height: 100%;
+     width: 100%;
+    background-color: rgb(174, 217, 233);
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.reserva__uno.uno--whatsapp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.reserva__uno.uno--imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.ubicanos {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px); 
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+.Ubicanos__dos.dos--imagen1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.Ubicanos__dos.dos--texto1 {
+    display: grid;
+    place-items: center; 
+    height: 100%;
+    background-color: rgb(174, 217, 233);
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.emergencia {
+    display:grid;
+    grid-template-columns: repeat(3, 240px);
+    grid-template-rows: repeat(1, auto); 
+    gap: 15px;
+    justify-content: center;
+    align-content: center;
+}
+.emergencia__uno.uno--imagen1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.emergencia__uno.uno--texto {
+    display: grid;
+    place-items: center; 
+    height: 100%;
+    background-color: rgb(174, 217, 233);
+    color: rgba(249, 5, 5, 0.982);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
